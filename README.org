@@ -6,7 +6,7 @@
 #+TAGS: layer|web service
 
 # The maximum height of the logo should be 200 pixels.
-[[img/info.png]]
+# [[img/info.png]]
 
 # TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
@@ -23,12 +23,22 @@ This layer provides sensible evilified navigation for Info buffers.
   - Good documentation through a [[https://github.com/abo-abo/hydra][hydra]] (transient state)
 
 * Install
-To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =info= to the existing =dotspacemacs-configuration-layers= list in this
-file.
+To use this configuration layer, clone it into a directory named =info= within
+your =.emacs.d/private= directory. Subsequently add it to your =~/.spacemacs=.
+You will need to add =info= to the existing =dotspacemacs-configuration-layers=
+list in this file.
 
 * Key bindings
   In any Info buffer, press =?= to show a hydra listing available keybindings.
+
+  Beside the bindings that are documented in the hydra, the following major mode
+  leader keybindings are available:
+  
+| Key binding | Description        |
+|-------------+--------------------|
+| ~, h~       | list info history  |
+| ~, e c~     | eval current form  |
+| ~, e f~     | eval current defun |
 
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:

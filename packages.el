@@ -88,7 +88,10 @@ Each entry is either:
       "e" 'evil-forward-word-end
       "gt"   'Info-goto-node
       "gg"   'beginning-of-buffer
-      "G"   'end-of-buffer
-      )))
+      "G"   'end-of-buffer)
+    (spacemacs/set-leader-keys-for-major-mode 'Info-mode "h" 'Info-history)
+    (spacemacs/declare-prefix-for-mode 'Info-mode "e" "eval")
+    (spacemacs/set-leader-keys-for-major-mode 'Info-mode "ec" 'spacemacs/eval-current-form-sp)
+    (spacemacs/set-leader-keys-for-major-mode 'Info-mode "ef" 'spacemacs/eval-current-form)))
 
 ;;; packages.el ends here
