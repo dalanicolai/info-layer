@@ -83,6 +83,7 @@ Each entry is either:
       (kbd "C-i") 'evil-jump-forward
       "H" 'Info-history-back
       "L" 'Info-history-forward
+      (kbd "<tab>") 'Info-next-reference
       "w" 'evil-forward-word-begin
       "b" 'evil-backward-word-begin
       "e" 'evil-forward-word-end

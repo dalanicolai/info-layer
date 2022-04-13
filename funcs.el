@@ -3,11 +3,11 @@
     "
 Info-mode:
 
-  _J_/_K_ scroll down/up (or next/previous node)     ^^_L_ history forward _u_p (↑)                             _f_ollow reference      _T_OC
-  _[_/_]_ backward/forward (prev/next logical node)  ^^_H_ history back    _m_enu (↓) (C-u for new window)      _i_ndex                 _d_irectory
-  _j_/_k_ scroll line down/up                        _<_/_t_op             _gt_ goto (C-u for new window)       _,_ next index item     _c_opy node name
-  _h_/_l_ move left/right                            ^^_>_ final           _gg_ beginning of buffer             virtual _I_ndex         _C_lone buffer
-  regex _s_earch (_S_ case sensitive)                ^^ ^^                 _G_  end of buffer                   _o_ ace follow link     _a_propos
+  _J_/_K_ scroll down/up (or next/previous node)      _L_/_H_ history forward/back   _u_p (↑)                             _f_ollow reference      _T_OC
+  _[_/_]_ backward/forward (prev/next logical node)  ^^_<tab>_ next reference        _m_enu (C-u for new window)          _i_ndex                 _d_irectory
+  _j_/_k_ scroll line down/up                        _<_/_t_op                       _gt_ goto (C-u for new window)       _,_ next index item     _c_opy node name
+  _h_/_l_ move left/right                            ^^_>_ final                     _gg_ beginning of buffer             virtual _I_ndex         _C_lone buffer
+  regex _s_earch (_S_ case sensitive)                ^^ ^^                           _G_  end of buffer                   _o_ ace follow link     _a_propos
 
   _1_ .. _9_ Pick first .. ninth item in the node's menu.
 
@@ -26,6 +26,7 @@ Info-mode:
 
     ("H"   Info-history-back)
     ("L"   Info-history-forward)
+    ("<tab>" Info-next-reference)
     ("t"   Info-top-node)
     ("<"   Info-top-node)
     (">"   Info-final-node)
